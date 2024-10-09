@@ -1,0 +1,255 @@
+
+body{
+    max-height: 568px;
+    width: 320px;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: white;
+}
+.main-class{
+    width: 320px;
+    position: relative;
+    top:0;
+    margin: 0 auto;
+    text-align: center;
+   
+    overflow-x: hidden;
+}
+.first-screen{
+    position: inherit;
+    width: 320px;
+    height: 100vh;
+    top: 0px;
+    background-size: cover;
+    overflow: hidden;   
+}
+.second-screen{
+    position: inherit;
+    width: 320px;
+    height: 100vh;
+    top: 0px;
+    background-size: cover;
+    overflow: hidden; 
+}
+#second-screen{
+    display: none;
+}
+.third-screen{
+    position: inherit;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    background-size: cover;
+    overflow: hidden; 
+}
+#page2vid{
+    width: 320px; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#third-screen{
+    display: none;
+}
+#page1Img, #page2Img, #page3Img , #page4Img{
+   width: 100%;
+   height: 90vh;
+}
+
+.fourth-screen{
+    position: inherit;
+    width: 320px;
+    height: 100vh;
+    top: 0px;
+    background-size: cover;
+    overflow: hidden; 
+}
+#fourth-screen{
+    display: none;
+    position: relative;
+}
+
+#mid-screen{
+    position: inherit;
+    width: 320px;
+    height: 100vh;
+    top: 0px;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+#signstyle{
+    position: absolute;
+    left: 0px;
+    width: 320px;
+    height: 90vh;
+}
+
+.details{
+    width: 200px;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #002fa4;
+    background-color: #fff;
+    position: relative;
+    top: 75%;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+ 
+
+
+.audio{
+    animation: pulse 1.5s infinite ease-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+   
+    position: absolute;
+    width: 15%;
+    top: 70%;
+    left: 40%;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    75% {
+      transform: scale(1.4);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .optionscreen {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.option {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-color: #fff;
+}
+.option:hover {
+    background-color: white;
+    color:#002fa4;
+}
+.options button{
+    background-color: transparent;
+    border-style: solid;
+    
+
+}
+
+.option.selected {
+    background-color: #fff;
+    color:#002fa4;
+}
+
+button.select-btn:disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.instruction {
+    
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top:30px;
+}
+
+#page2taptext{
+    display:none; 
+    position: absolute;
+    width: 80%;
+    left: 10%; 
+    top:76%;
+}
+
+#logo{
+  top:0px;
+  position: absolute;
+  z-index: 1;
+  height: 280px;
+}
+
+@media screen and (max-height: 700px) {
+    .option{
+        height: 30px;
+        font-size: 12px;
+        padding:0px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .options{
+       position: relative;
+       
+    }
+    #logo{
+    height: 200px;
+    width: 400px;
+    }
+}
+
+@media screen and (min-width:375px){
+    #page1micbgtext{
+        width: 40%;
+        top: 82%;
+        left: 30%;
+    }
+    
+}   
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>closeup-entertainment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=320, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <meta name="generator" content="Inmobi">
+    <link rel="stylesheet" href="css/hempel_style.css">
+</head>
+<body>
+    <div class="main-class">
+        <div class="first-screen" id="first-screen">  
+            <img id="page1Img" src="./assets/firstpagebg.jpeg" alt="page1Img">
+            <img id="page1micImg" class="audio" src="./assets/mic-icon@3x.png" alt="page1micImg">
+            <img style="position: absolute; z-index: 1;width: 280px;top: 75%;left: 6%;" id="page1micbgImg"  src="./assets/Instruction-bg@3x.png" alt="page1micbgImg">
+            <img style="position: absolute; z-index: 1;width: 60%;top: 80%;left: 20%;" id="page1micbgtext"  src="./assets/instruction-1@3x.png" alt="page1micbgImg">
+        </div>
+       <!-- Inactive -->
+       
+       
+       <div class="second-screen" id="second-screen">
+        <img id="logo" style="top:0px;position: absolute;z-index: 1;height: 320px;"  src="./assets/Logo@2x.png" alt="logo">
+        <video id="page2vid" webkit-playsinline="" autoplay="" playsinline="" muted="" >
+                    <source src="./assets/Reveal.mp4" type="video/mp4">
+            </video>
+        
+            <!--<img  id="page2taptext"  src="./CTA-1@2x.png" onclick="gotoScreen3();" alt="page2taptext"> -->
+       
+       </div>
+       
+       <div style="display: none;" id="mid-screen">
+        
+            <img  style="height:90vh;width:320px;" id="midscr"  src="./assets/BG2.png" onclick="gotoScreen3();" alt="page2taptext">
+       
+       </div>
+       
+       <div class="third-screen" id="third-screen"> 
+        <div style ="position: relative;" class="header-third-screen">
+        <!--<img id="logo"   src="./Logo@2x.png" alt="logo"> -->
+        <img id="page3Img" src="./assets/BG.png" alt="page3Img">
+        </div>
+        <div class="optionscreen">
+            <div class="container">
+                <div class="header">
+                    <h2>Your Space <br> Your Signature</h2>
+                </div>
+                <div class="options">
+                    <button class="option" id="opt1">Simple</button>
+                    <button class="option" id="opt2">Vibrant</button>
+                    <button class="option" id="opt3" >Sleek</button>
+                    <button class="option" id="opt4"  >Luxurious</button>
+                    <button class="option" id="opt5"  >Natural</button>
+                </div>
+                <p style="color:white;" class="instruction">Choose two styles that resonate with you</p>
+            </div>
+        </div>
+        </div> 
+        
+        <div class="fourth-screen" id="fourth-screen">
+            <img id="signstyle"  src="" alt="signstyle">
+            <img id="refreshIcon" style="position: absolute;width: 20%;top: 60%;left: 75%;" onclick="refreshImage();" src="./assets/regenerate-icon@3x.png" alt="refreshIcon">
+            <img id="downloadIcon" style="position: absolute;width: 20%;top: 65%;left: 75%;" onclick="downloadImage();" src="./assets/download-icon@3x.png" alt="downloadIcon">
+            <button class="details" onclick="window.open();">Learn More</button>
+        </div>
+
+     </div>
+        
+        
+    
+</body>
+<script src="js/audiodetection.js"></script>
+</html>
